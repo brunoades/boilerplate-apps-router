@@ -1,6 +1,7 @@
 module.exports = {
   '*.{js,jsx,tx,tsx}': (filenames) => [
     `prettier --write ${filenames.join(' ')}`,
-    `eslint --fix ${filenames.join(' --file')}`
+    `npm run lint --fix . ${filenames.join(' --file')}`,
+    `npm test -- --findRelatedTests ${filenames.join(' ')}`
   ]
 }
