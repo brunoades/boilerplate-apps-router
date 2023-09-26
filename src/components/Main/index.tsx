@@ -1,9 +1,8 @@
-const Main = () => {
-  return (
-    <div>
-      <h1>React Avançado</h1>
-    </div>
-  )
-}
+import * as S from './styles'
+const Main = () => (
+  <S.Wrapper>
+    <h1>React Avançado</h1>
+  </S.Wrapper>
+)
 
 export default Main
